@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react';
 import type { Route } from 'next';
 import type { UrlObject } from 'url';
-import type { Route } from 'next';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
 
