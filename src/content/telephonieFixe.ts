@@ -5,7 +5,7 @@ export const TELEPHONIE_FIXE = {
       "Standards virtuels, VoIP et outils de collaboration réunis dans une solution claire, évolutive et sécurisée.",
     ctas: [
       { label: "Demander un devis", href: "/contact" },
-      { label: "Être rappelé", href: "/contact?callback=1" },
+      { label: "Être rappelé", href: { pathname: "/contact", query: { callback: '1' } } as any },
     ],
     image: {
       src: "https://picsum.photos/seed/fixed-telephony/1200/900",

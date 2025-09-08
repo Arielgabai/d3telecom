@@ -7,7 +7,7 @@ export const HOME = {
       "Téléphonie fixe, mobile et Internet professionnel réunis dans une offre claire, fiable et prête pour ta croissance.",
     ctas: [
       { label: "Demander un devis", href: "/contact" },
-      { label: "Être rappelé", href: "/contact?callback=1" },
+      { label: "Être rappelé", href: { pathname: "/contact", query: { callback: '1' } } as any },
     ],
     image: {
       src: "https://picsum.photos/seed/hero-network/1200/900",

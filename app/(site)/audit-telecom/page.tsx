@@ -17,7 +17,7 @@ export default function Page() {
       <Hero
         title="Audit télécom : clarifie, optimise, sécurise"
         subtitle="Un état des lieux concret et un plan d’action priorisé pour réduire les coûts et améliorer l’expérience."
-        ctas={[{ label: 'Demander un devis', href: '/contact' }, { label: 'Être rappelé', href: '/contact?callback=1' }]}
+        ctas={[{ label: 'Demander un devis', href: '/contact' }, { label: 'Être rappelé', href: { pathname: '/contact', query: { callback: '1' } } as any }]}
         image={{ src: 'https://picsum.photos/seed/audit/1200/900', alt: 'Schéma d’architecture réseau abstrait' }}
       />
       <section className="py-12 md:py-16">
