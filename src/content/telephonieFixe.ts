@@ -8,8 +8,8 @@ export const TELEPHONIE_FIXE = {
       { label: "Être rappelé", href: { pathname: "/contact", query: { callback: '1' } } },
     ],
     image: {
-      src: "https://picsum.photos/seed/fixed-telephony/1200/900",
-      alt: "Illustration abstraite de réseau fibre et interconnexions",
+      src: "https://images.unsplash.com/photo-1529336953121-ad5a0d43d0f5?q=80&w=1600&auto=format&fit=crop",
+      alt: "Téléphone fixe professionnel sur bureau",
     },
   },
   pillars: [

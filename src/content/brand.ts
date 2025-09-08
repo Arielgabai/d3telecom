@@ -1,10 +1,10 @@
 export const BRAND = {
-  name: "NOM_ENTREPRISE",
+  name: "D3 Telecom",
   baseline: "Solutions télécom professionnelles, simples et évolutives",
-  phone: "0X XX XX XX XX",
-  email: "contact@votredomaine.fr",
+  phone: "01 43 53 84 10",
+  email: "contact@d3telecom.fr",
   address: "Adresse complète",
-  zone: "France entière / Région / Département",
+  zone: "France entière",
   palette: {
     primary: "#0F4C81",
     secondary: "#1F2937",

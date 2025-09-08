@@ -10,8 +10,8 @@ export const HOME = {
       { label: "Être rappelé", href: { pathname: "/contact", query: { callback: '1' } } },
     ],
     image: {
-      src: "https://picsum.photos/seed/hero-network/1200/900",
-      alt: "Illustration abstraite réseau et connectivité",
+      src: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
+      alt: "Réseau télécom et fibre optique",
     },
   },
   pillars: [
