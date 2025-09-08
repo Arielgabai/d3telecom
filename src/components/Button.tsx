@@ -15,7 +15,7 @@ const variants: Record<Variant, string> = {
 };
 
 type ButtonProps = PropsWithChildren<{
-  href?: Route | UrlObject;
+  href?: Route | UrlObject | string;
   variant?: Variant;
   className?: string;
 }> & ButtonHTMLAttributes<HTMLButtonElement>;

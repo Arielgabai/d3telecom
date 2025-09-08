@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import { Button } from './Button';
+import type { Route } from 'next';
+import type { UrlObject } from 'url';
 
 type HeroProps = {
   title: string;
   subtitle: string;
-  ctas: ReadonlyArray<{ label: string; href: string }>;
+  ctas: ReadonlyArray<{ label: string; href: Route | UrlObject | string }>;
   image?: { src: string; alt: string };
 };
 
