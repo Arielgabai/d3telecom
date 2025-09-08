@@ -17,7 +17,7 @@ export default function Page() {
       <Hero
         title="Internet professionnel fiable, priorisé et supervisé"
         subtitle="Fibre dédiée, SDSL, 4G/5G de secours et QoS pour garder le cap en toute circonstance."
-        ctas={[{ label: 'Demander un devis', href: '/contact' }, { label: 'Être rappelé', href: { pathname: '/contact', query: { callback: '1' } } as any }]}
+        ctas={[{ label: 'Demander un devis', href: '/contact' }, { label: 'Être rappelé', href: { pathname: '/contact', query: { callback: '1' } } }]}
         image={{ src: 'https://picsum.photos/seed/fiber/1200/900', alt: 'Câble fibre optique abstrait' }}
       />
       <section className="py-12 md:py-16">

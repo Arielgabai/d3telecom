@@ -17,7 +17,7 @@ export default function Page() {
       <Hero
         title="Téléphonie mobile pro, simple et pilotable"
         subtitle="Forfaits adaptés à tes usages, data priorisée, gestion de flotte et support réactif."
-        ctas={[{ label: 'Demander un devis', href: '/contact' }, { label: 'Être rappelé', href: { pathname: '/contact', query: { callback: '1' } } as any }]}
+        ctas={[{ label: 'Demander un devis', href: '/contact' }, { label: 'Être rappelé', href: { pathname: '/contact', query: { callback: '1' } } }]}
         image={{ src: 'https://picsum.photos/seed/mobile/1200/900', alt: 'Smartphones professionnels' }}
       />
       <section className="py-12 md:py-16">

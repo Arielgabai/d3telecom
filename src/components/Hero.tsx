@@ -6,7 +6,7 @@ import type { UrlObject } from 'url';
 type HeroProps = {
   title: string;
   subtitle: string;
-  ctas: ReadonlyArray<{ label: string; href: Route | UrlObject | string }>;
+  ctas: ReadonlyArray<{ label: string; href: Route | UrlObject }>;
   image?: { src: string; alt: string };
 };
 
