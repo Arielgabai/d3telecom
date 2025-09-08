@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ButtonHTMLAttributes, PropsWithChildren } from 'react';
+import type { Route } from 'next';
 
 type Variant = 'primary' | 'secondary' | 'ghost';
 
@@ -13,7 +14,7 @@ const variants: Record<Variant, string> = {
 };
 
 type ButtonProps = PropsWithChildren<{
-  href?: string;
+  href?: Route;
   variant?: Variant;
   className?: string;
 }> & ButtonHTMLAttributes<HTMLButtonElement>;
