@@ -21,14 +21,17 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 
-# Next standalone output
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+# Install production deps for next start
+COPY package.json package-lock.json* ./
+RUN if [ -f package-lock.json ]; then npm ci --omit=dev; else npm i --omit=dev; fi
+
+# Copy build output and public assets
+COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 
 # Healthcheck optional (Render peut pinger /)
 EXPOSE 3000
 ENV PORT=3000
-CMD ["node", "server.js"]
+CMD ["npm", "run", "start"]
 
 
