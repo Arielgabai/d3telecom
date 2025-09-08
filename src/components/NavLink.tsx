@@ -2,14 +2,17 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { PropsWithChildren } from 'react';
+import type { Route } from 'next';
+import type { UrlObject } from 'url';
 
 type NavLinkProps = PropsWithChildren<{
-  href: string;
+  href: Route | UrlObject;
 }>;
 
 export function NavLink({ href, children }: NavLinkProps) {
   const pathname = usePathname();
-  const isActive = pathname === href;
+  const hrefPath = typeof href === 'string' ? href : href.pathname || '';
+  const isActive = pathname === hrefPath;
   return (
     <Link
       href={href}
