@@ -18,7 +18,7 @@ type Pillar = {
   icon: keyof typeof ICONS;
 };
 
-export function Pillars({ items }: { items: Pillar[] }) {
+export function Pillars({ items }: { items: ReadonlyArray<Pillar> }) {
   return (
     <section className="py-12 md:py-16">
       <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

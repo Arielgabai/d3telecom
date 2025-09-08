@@ -4,7 +4,7 @@ import { Button } from './Button';
 type HeroProps = {
   title: string;
   subtitle: string;
-  ctas: { label: string; href: string }[];
+  ctas: ReadonlyArray<{ label: string; href: string }>;
   image?: { src: string; alt: string };
 };
 
