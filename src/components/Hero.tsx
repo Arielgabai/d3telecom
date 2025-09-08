@@ -23,7 +23,7 @@ export function Hero({ title, subtitle, ctas, image }: HeroProps) {
           </p>
           <div className="flex flex-wrap items-center gap-4">
             {ctas.map((cta) => (
-              <Button key={cta.href} href={cta.href}>
+              <Button key={typeof cta.href === 'string' ? cta.href : cta.href.pathname || cta.label} href={cta.href}>
                 {cta.label}
               </Button>
             ))}
