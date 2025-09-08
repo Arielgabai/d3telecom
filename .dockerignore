@@ -1,0 +1,25 @@
+# Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js
+.next
+out
+.vercel
+
+# VCS
+.git
+.gitignore
+
+# Env
+.env*
+
+# Tests & coverage
+coverage
+
+# OS
+.DS_Store
+**/Thumbs.db
