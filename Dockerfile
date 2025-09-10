@@ -20,6 +20,7 @@ FROM node:20-bullseye-slim AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV HOSTNAME=0.0.0.0
 
 # Copy standalone build (smaller, self-contained)
 COPY --from=builder /app/.next/standalone ./
@@ -28,7 +29,6 @@ COPY --from=builder /app/public ./public
 
 # Healthcheck optional (Render peut pinger /)
 EXPOSE 3000
-ENV PORT=3000
 CMD ["node", "server.js"]
 
 
