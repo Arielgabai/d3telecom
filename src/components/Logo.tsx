@@ -21,7 +21,7 @@ export function Logo({ className, priority = false }: LogoProps) {
         width={180}
         height={60}
         priority={priority}
-        className="h-8 w-auto"
+        className="h-12 w-auto"
         onError={() => setSrc(fallbackSrc)}
       />
       <span className="sr-only">{BRAND.name}</span>
