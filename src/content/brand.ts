@@ -5,6 +5,7 @@ export const BRAND = {
   email: "contact@d3telecom.fr",
   address: "Adresse complète",
   zone: "France entière",
+  logoSrc: "https://i.ibb.co/bjHx7LVD/d3telecom.jpg",
   palette: {
     primary: "#0F4C81",
     secondary: "#1F2937",

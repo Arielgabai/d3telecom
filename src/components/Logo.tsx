@@ -10,7 +10,7 @@ export function Logo({ className, priority = false }: LogoProps) {
   return (
     <span className={className}>
       <Image
-        src="/images/d3telecom-logo.png"
+        src={BRAND.logoSrc || '/images/d3telecom-logo.jpg'}
         alt={`${BRAND.name} - ${BRAND.baseline}`}
         width={180}
         height={60}
