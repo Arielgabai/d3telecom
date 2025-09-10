@@ -20,7 +20,7 @@ export default function Page() {
         product={{ name: 'Téléphonie fixe', description: c.hero.subtitle }}
         faq={c.faq.map((f) => ({ question: f.q, answer: f.a }))}
       />
-      <Hero {...c.hero} />
+      <Hero {...c.hero} image={{ src: '/images/telephonie-fixe-hero.jpg', alt: 'Téléphonie fixe professionnelle' }} />
       <Pillars items={c.pillars as any} />
 
       <section className="py-12 md:py-16">
