@@ -5,10 +5,12 @@ export const BRAND = {
   email: "contact@d3telecom.fr",
   address: "Adresse complète",
   zone: "France entière",
-  logoSrc: "/images/d3telecom-logo.jpg",  palette: {
+  logoSrc: "/images/d3telecom-logo.jpg",
+  palette: {
     primary: "#0F4C81",
     secondary: "#1F2937",
     accent: "#06B6D4",
+  },
 } as const;
 
 export type Brand = typeof BRAND;
