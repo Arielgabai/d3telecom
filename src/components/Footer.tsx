@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import { BRAND } from '@/content/brand';
+import { Logo } from './Logo';
 
 export function Footer() {
   return (
     <footer className="mt-16 border-t border-gray-200 bg-white" role="contentinfo">
       <div className="container mx-auto grid gap-10 py-12 md:grid-cols-4">
         <div>
-          <div className="text-lg font-semibold text-brand-primary">{BRAND.name}</div>
+          <Logo className="block" />
           <p className="mt-2 text-sm text-gray-600">{BRAND.baseline}</p>
         </div>
         <div>
